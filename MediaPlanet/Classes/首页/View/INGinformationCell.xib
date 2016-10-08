@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="smallImageCell" rowHeight="138" id="KGk-i7-Jjw" customClass="INGinformationCell">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="313" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="行业资讯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3L-hx-DkE">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArA-fM-zYJ">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="ep7-L0-ePJ"/>
+                            <constraint firstAttribute="width" constant="46" id="zh3-jT-9TO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="关注">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_img1" translatesAutoresizingMaskIntoConstraints="NO" id="1Ff-qZ-tKW">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="01T-03-aw2"/>
+                            <constraint firstAttribute="width" constant="100" id="Mon-3o-cFa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="行业资讯标题" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sux-ze-TeU">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广告商" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcp-4p-Y7c">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Sux-ze-TeU" secondAttribute="trailing" constant="20" id="0AH-8B-kBe"/>
+                    <constraint firstItem="1Ff-qZ-tKW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="4ra-Gi-oht"/>
+                    <constraint firstItem="Xcp-4p-Y7c" firstAttribute="top" secondItem="Sux-ze-TeU" secondAttribute="bottom" constant="5" id="EZn-qf-8cs"/>
+                    <constraint firstItem="M3L-hx-DkE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="G1u-AL-0QR"/>
+                    <constraint firstItem="Sux-ze-TeU" firstAttribute="top" secondItem="1Ff-qZ-tKW" secondAttribute="top" constant="5" id="LCe-rf-bEY"/>
+                    <constraint firstAttribute="trailing" secondItem="ArA-fM-zYJ" secondAttribute="trailing" constant="20" id="Map-2i-TIG"/>
+                    <constraint firstAttribute="trailing" secondItem="Xcp-4p-Y7c" secondAttribute="trailing" constant="20" id="Rch-uQ-iae"/>
+                    <constraint firstItem="1Ff-qZ-tKW" firstAttribute="top" secondItem="M3L-hx-DkE" secondAttribute="bottom" constant="5" id="XMw-m6-RZZ"/>
+                    <constraint firstItem="Xcp-4p-Y7c" firstAttribute="leading" secondItem="1Ff-qZ-tKW" secondAttribute="trailing" constant="5" id="dPw-z8-pdp"/>
+                    <constraint firstItem="M3L-hx-DkE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="sO0-6q-3Lf"/>
+                    <constraint firstItem="ArA-fM-zYJ" firstAttribute="centerY" secondItem="M3L-hx-DkE" secondAttribute="centerY" id="wMD-wf-jxS"/>
+                    <constraint firstItem="Sux-ze-TeU" firstAttribute="leading" secondItem="1Ff-qZ-tKW" secondAttribute="trailing" constant="5" id="yzW-tg-jzN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="admentLable" destination="Xcp-4p-Y7c" id="VmI-4i-wu5"/>
+                <outlet property="follwersButton" destination="ArA-fM-zYJ" id="P3v-et-2eT"/>
+                <outlet property="informationImageView" destination="1Ff-qZ-tKW" id="4nj-io-KcV"/>
+                <outlet property="informationInfo" destination="Sux-ze-TeU" id="rq1-be-nnN"/>
+            </connections>
+            <point key="canvasLocation" x="29.5" y="152"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home_img1" width="103" height="97"/>
+    </resources>
+</document>

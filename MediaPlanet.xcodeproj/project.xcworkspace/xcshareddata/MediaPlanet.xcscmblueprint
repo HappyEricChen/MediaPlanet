@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7f50ec8c-2590-ee45-9a45-a5f5ddfd4f15++5431",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "7f50ec8c-2590-ee45-9a45-a5f5ddfd4f15++5431" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7f50ec8c-2590-ee45-9a45-a5f5ddfd4f15++5431" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7B8D3A63-97C5-4EC5-8025-B843F3339069",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7f50ec8c-2590-ee45-9a45-a5f5ddfd4f15++5431" : "SVNnew\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MediaPlanet",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MediaPlanet\/MediaPlanet.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.2.99\/svn\/MediaPlanet",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7f50ec8c-2590-ee45-9a45-a5f5ddfd4f15++5431"
+    }
+  ]
+}

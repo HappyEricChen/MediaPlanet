@@ -1,0 +1,18 @@
+platform :ios, "8.0"
+
+pod "MJExtension"
+pod "AFNetworking"
+pod "SDWebImage"
+pod "SVProgressHUD"
+pod "MJRefresh"
+pod "pop"
+pod 'AMapLocation','1.2.2' #高德定位
+pod 'AMap2DMap','3.2.0' #2D地图SDK(2D地图和3D地图不能同时使用)
+pod 'AMapSearch','3.0.0' #搜索服务SDK
+pod 'FLAnimatedImage' #, '1.0'
+pod 'XZMRefresh'   #横向刷新
+pod 'TZImagePickerController' #打开相册选择多张图片
+#pod 'WZLBadge'#设置推送的小红点
+pod 'MGSwipeTableCell' #侧滑
+pod 'SDAutoLayout', '~> 2.1.1' #自动布局
+pod 'MBProgressHUD','~> 1.0.0'

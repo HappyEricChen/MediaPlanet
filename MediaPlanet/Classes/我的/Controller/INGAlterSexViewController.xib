@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="INGAlterSexViewController">
+            <connections>
+                <outlet property="manButton" destination="Mm9-aI-QID" id="ZZv-4H-z09"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="womenButton" destination="owQ-i9-hAA" id="4IT-Qn-PNV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm9-aI-QID">
+                    <rect key="frame" x="30" y="86" width="260" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="zL2-KU-ILg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="男" image="personal_c"/>
+                    <state key="selected" image="col_all"/>
+                    <connections>
+                        <action selector="manClick:" destination="-1" eventType="touchUpInside" id="LqP-zr-xd0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owQ-i9-hAA">
+                    <rect key="frame" x="30" y="146" width="260" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jnl-bf-rql"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="女" image="personal_c"/>
+                    <state key="selected" image="col_all"/>
+                    <connections>
+                        <action selector="womenClick:" destination="-1" eventType="touchUpInside" id="vRq-TL-qpg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="owQ-i9-hAA" firstAttribute="top" secondItem="Mm9-aI-QID" secondAttribute="bottom" constant="20" id="34I-SR-9Ig"/>
+                <constraint firstItem="owQ-i9-hAA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="QIt-kn-bMT"/>
+                <constraint firstAttribute="trailing" secondItem="Mm9-aI-QID" secondAttribute="trailing" constant="30" id="Ydc-sV-Xke"/>
+                <constraint firstItem="Mm9-aI-QID" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="86" id="geE-Ef-3vH"/>
+                <constraint firstItem="Mm9-aI-QID" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="hYf-fE-5EH"/>
+                <constraint firstAttribute="trailing" secondItem="owQ-i9-hAA" secondAttribute="trailing" constant="30" id="pqb-Yq-33F"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="col_all" width="13" height="14"/>
+        <image name="personal_c" width="13" height="13"/>
+    </resources>
+</document>

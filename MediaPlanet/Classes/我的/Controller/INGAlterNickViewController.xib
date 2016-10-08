@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="INGAlterNickViewController">
+            <connections>
+                <outlet property="nickTextFied" destination="AyV-jA-jIN" id="Qag-2b-7x1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRX-12-ajF" userLabel="输入昵称">
+                    <rect key="frame" x="0.0" y="94" width="375" height="31"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="bVM-n6-Pd0">
+                            <rect key="frame" x="0.0" y="30" width="375" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="r1X-Zf-VCa"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXU-gV-BRB">
+                            <rect key="frame" x="285" y="0.0" width="50" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="4q5-vB-IZb"/>
+                                <constraint firstAttribute="width" constant="50" id="Xr6-8d-eiP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="提交" backgroundImage="email_button"/>
+                            <connections>
+                                <action selector="commitButtonClick:" destination="-1" eventType="touchUpInside" id="mcF-Q5-Upc"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入昵称" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AyV-jA-jIN" userLabel="nick">
+                            <rect key="frame" x="50" y="0.0" width="225" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="103-yv-bVf"/>
+                        <constraint firstItem="GXU-gV-BRB" firstAttribute="top" secondItem="XRX-12-ajF" secondAttribute="top" id="5Vd-4Z-Fyy"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="JVp-Nh-WAw"/>
+                        <constraint firstItem="AyV-jA-jIN" firstAttribute="top" secondItem="XRX-12-ajF" secondAttribute="top" id="Neh-ht-hIr"/>
+                        <constraint firstAttribute="trailing" secondItem="bVM-n6-Pd0" secondAttribute="trailing" id="NjJ-L0-vRC"/>
+                        <constraint firstAttribute="trailing" secondItem="GXU-gV-BRB" secondAttribute="trailing" constant="40" id="QSS-JV-5i7"/>
+                        <constraint firstItem="GXU-gV-BRB" firstAttribute="top" secondItem="XRX-12-ajF" secondAttribute="top" id="QkC-we-u3T"/>
+                        <constraint firstAttribute="trailing" secondItem="GXU-gV-BRB" secondAttribute="trailing" constant="20" id="Uj2-bN-is7"/>
+                        <constraint firstItem="AyV-jA-jIN" firstAttribute="leading" secondItem="XRX-12-ajF" secondAttribute="leading" constant="50" id="WHH-Q5-Ijy"/>
+                        <constraint firstItem="GXU-gV-BRB" firstAttribute="leading" secondItem="AyV-jA-jIN" secondAttribute="trailing" constant="10" id="Wap-Ts-drA"/>
+                        <constraint firstAttribute="trailing" secondItem="AyV-jA-jIN" secondAttribute="trailing" constant="20" id="bKx-oq-ses"/>
+                        <constraint firstAttribute="bottom" secondItem="GXU-gV-BRB" secondAttribute="bottom" id="eG9-0R-32p"/>
+                        <constraint firstItem="GXU-gV-BRB" firstAttribute="leading" secondItem="AyV-jA-jIN" secondAttribute="trailing" constant="10" id="jLb-eR-ikf"/>
+                        <constraint firstAttribute="bottom" secondItem="bVM-n6-Pd0" secondAttribute="bottom" id="lZ7-RA-HSR"/>
+                        <constraint firstAttribute="bottom" secondItem="AyV-jA-jIN" secondAttribute="bottom" constant="1" id="pYM-aj-IRq"/>
+                        <constraint firstItem="GXU-gV-BRB" firstAttribute="leading" secondItem="AyV-jA-jIN" secondAttribute="trailing" constant="10" id="qcS-Xa-fiP"/>
+                        <constraint firstItem="GXU-gV-BRB" firstAttribute="top" secondItem="XRX-12-ajF" secondAttribute="top" constant="20" id="sTi-2d-l8j"/>
+                        <constraint firstAttribute="trailing" secondItem="bVM-n6-Pd0" secondAttribute="trailing" id="tCm-yB-ji4"/>
+                        <constraint firstItem="bVM-n6-Pd0" firstAttribute="leading" secondItem="XRX-12-ajF" secondAttribute="leading" id="xFX-yk-nag"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="JVp-Nh-WAw"/>
+                            <exclude reference="NjJ-L0-vRC"/>
+                            <exclude reference="bKx-oq-ses"/>
+                            <exclude reference="QkC-we-u3T"/>
+                            <exclude reference="Uj2-bN-is7"/>
+                            <exclude reference="eG9-0R-32p"/>
+                            <exclude reference="jLb-eR-ikf"/>
+                            <exclude reference="qcS-Xa-fiP"/>
+                            <exclude reference="sTi-2d-l8j"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XRX-12-ajF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CeM-KG-hqD"/>
+                <constraint firstItem="XRX-12-ajF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="TwG-Os-Qlj"/>
+                <constraint firstAttribute="trailing" secondItem="XRX-12-ajF" secondAttribute="trailing" id="kqh-Xu-6Od"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="email_button" width="37" height="22"/>
+        <image name="line" width="304" height="1"/>
+    </resources>
+</document>

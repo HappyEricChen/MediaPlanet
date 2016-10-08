@@ -1,0 +1,80 @@
+//
+//  PrefixHeader.pch
+//  MediaPlanet
+//
+//  Created by jamesczy on 16/6/1.
+//  Copyright © 2016年 jamesczy. All rights reserved.
+//
+#import <UIKit/UIKit.h>
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+JCExtension.h"
+#import "UIBarButtonItem+JCExtension.h"
+#import "INGConst.h"
+#import "NSString+INGExtension.h"
+#import <FLAnimatedImage.h>         //播放gif
+#import "JPUSHService.h"    //极光推送
+
+//自定义颜色
+#define JCColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+//随机色
+#define JCRandomColor JCColor(arc4random_uniform(256), arc4random_uniform(256),arc4random_uniform(256))
+//高度APIKEY
+//#define LBSAPIKEY @"92153914f24d72b25053a653c1d66224"
+
+//屏幕的宽度
+#define screenW [UIScreen mainScreen].bounds.size.width
+#define screenH [UIScreen mainScreen].bounds.size.height
+
+//NSMutableString *apiURL = [NSMutableString string];
+//http://112.64.131.222/mediaservice/api/
+/** 产品列表的模式 */
+typedef enum {
+    SearchProductType = 1,      //搜索模式
+    NormalProductType ,         //正常模式
+    SearchCategoryType ,        //分类模式
+    admentNameType              //广告商模式
+}productType;
+
+/** http://114.55.30.205/service/api/ *///生产环境
+//static NSString *const apiUrl = @"http://112.64.131.222/mediaservice/api/";
+//static NSString *const apiUrl = @"http://114.55.30.205/service/api/";//生产环境
+static NSString *const apiUrl = @"http://112.64.131.222/mediaplanet_service/api/"; /** 测试的api地址 */
+//注册秘钥
+static NSString *const secretKey = @"ED635BF1-B1B6-48D6-9197-F7240C0D5065";
+//会员请求秘钥
+static NSString *const key = @"4DB03900-7322-4C9C-A5D5-94AD7E8A5703";
+//沙盒中存guid的名称
+static NSString *const strStander = @"CFBundleUTokenString";
+//城市的key
+static NSString *const CityNameKey = @"CFBundleCityNameString";
+
+//********************************************************************//
+
+#import <SDAutoLayout.h>
+#import "BaseCollectionViewCell.h"
+
+#import <SVProgressHUD.h>
+#import <AFNetworking.h>
+#import "NSMutableDictionary+Extension.h"
+#import "NSObject+Helper.h"
+
+/**
+ * 宏定义颜色，使用16进制表示
+ */
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define UIColorFromRGBWithAlpha(rgbValue,alp) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alp]
+
+/**
+ *  图片加载方法
+ */
+#define ImageNamed(_pointer) [UIImage imageNamed:_pointer]
+
+/**
+ *  字体定义
+ */
+#define FONT_HannotateSC(s) [UIFont fontWithName:@"迷你简楷体" size:s]
+
+#endif /* PrefixHeader_pch */

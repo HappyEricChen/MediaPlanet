@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="INGadmentInfoView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_img" translatesAutoresizingMaskIntoConstraints="NO" id="FKO-ck-zbO">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Nrj-P0-enj"/>
+                        <constraint firstAttribute="width" constant="150" id="szD-bn-4Wc"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Nrj-P0-enj"/>
+                            <exclude reference="szD-bn-4Wc"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广告商" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVc-Hl-gvv" userLabel="广告商名称">
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QC5-d8-hIs">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FKO-ck-zbO" secondAttribute="trailing" constant="80" id="1S7-H9-ZeA"/>
+                <constraint firstItem="QC5-d8-hIs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="5AK-96-kzM"/>
+                <constraint firstItem="oVc-Hl-gvv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="78T-5g-mWb"/>
+                <constraint firstAttribute="bottom" secondItem="QC5-d8-hIs" secondAttribute="bottom" constant="20" id="80g-OK-FIy"/>
+                <constraint firstItem="FKO-ck-zbO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="80" id="I2v-kp-8qg"/>
+                <constraint firstAttribute="trailing" secondItem="QC5-d8-hIs" secondAttribute="trailing" constant="20" id="SAD-ii-Sj8"/>
+                <constraint firstItem="oVc-Hl-gvv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Vx1-lV-DV8"/>
+                <constraint firstItem="FKO-ck-zbO" firstAttribute="width" secondItem="FKO-ck-zbO" secondAttribute="height" multiplier="201:158" id="ZUt-Yg-bsd"/>
+                <constraint firstItem="FKO-ck-zbO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="bMp-yq-kbD"/>
+                <constraint firstItem="QC5-d8-hIs" firstAttribute="top" secondItem="oVc-Hl-gvv" secondAttribute="bottom" constant="10" id="fbL-Hv-Ezt"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oVc-Hl-gvv" secondAttribute="trailing" constant="10" id="l0Q-4O-nHL"/>
+                <constraint firstItem="oVc-Hl-gvv" firstAttribute="top" secondItem="FKO-ck-zbO" secondAttribute="bottom" constant="10" id="zYL-WQ-gBN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="adIcon" destination="FKO-ck-zbO" id="5Uj-lK-wfD"/>
+                <outlet property="adInfoText" destination="QC5-d8-hIs" id="98y-lw-0qZ"/>
+                <outlet property="admentNameLable" destination="oVc-Hl-gvv" id="juh-CK-U2P"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="82.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pic_img" width="180" height="180"/>
+    </resources>
+</document>

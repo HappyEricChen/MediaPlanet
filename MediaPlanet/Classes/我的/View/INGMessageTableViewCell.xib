@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="messageID" selectionStyle="none" indentationWidth="10" rowHeight="142" id="KGk-i7-Jjw" customClass="INGMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="141.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="pOy-LN-yGk" userLabel="topLine">
+                        <rect key="frame" x="0.0" y="27" width="320" height="1"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间: 2016-06-12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0R-LJ-dL7">
+                        <rect key="frame" x="20" y="5" width="280" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="135" id="UV2-iB-7VS"/>
+                            <constraint firstAttribute="height" constant="21" id="cBu-XO-Gy1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UV2-iB-7VS"/>
+                                <exclude reference="cBu-XO-Gy1"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="你好我们，需要哈市的回复就爱看还是分开奥斯卡东方航空安顺" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg8-HU-cOv">
+                        <rect key="frame" x="20" y="33" width="280" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="bvt-3P-958">
+                        <rect key="frame" x="0.0" y="69" width="320" height="1"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qU-wj-m0Y">
+                        <rect key="frame" x="250" y="75" width="50" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Ixd-dL-B31"/>
+                            <constraint firstAttribute="width" constant="50" id="ye0-i6-ja3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="未回复">
+                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="您好，目前我们支持线下支付，阿斯顿发贺卡是否" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8y-qI-3qa">
+                        <rect key="frame" x="20" y="75" width="280" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="bvt-3P-958" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2pu-h8-gp7"/>
+                    <constraint firstItem="h0R-LJ-dL7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="EPi-sf-SpR"/>
+                    <constraint firstAttribute="trailing" secondItem="pOy-LN-yGk" secondAttribute="trailing" id="Ili-3g-GPv"/>
+                    <constraint firstAttribute="trailing" secondItem="bvt-3P-958" secondAttribute="trailing" id="Lff-zk-4sY"/>
+                    <constraint firstItem="pOy-LN-yGk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Qoe-ma-lOb"/>
+                    <constraint firstItem="h0R-LJ-dL7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Ti5-Ac-3ZI"/>
+                    <constraint firstItem="Gg8-HU-cOv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="VHV-kP-eOt"/>
+                    <constraint firstItem="W8y-qI-3qa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Zwj-PK-PkW"/>
+                    <constraint firstItem="Gg8-HU-cOv" firstAttribute="top" secondItem="pOy-LN-yGk" secondAttribute="bottom" constant="5" id="dNy-za-iDR"/>
+                    <constraint firstItem="W8y-qI-3qa" firstAttribute="top" secondItem="bvt-3P-958" secondAttribute="bottom" constant="5" id="gVP-35-WzL"/>
+                    <constraint firstItem="0qU-wj-m0Y" firstAttribute="top" secondItem="bvt-3P-958" secondAttribute="bottom" constant="5" id="hX7-PF-AEW"/>
+                    <constraint firstAttribute="trailing" secondItem="h0R-LJ-dL7" secondAttribute="trailing" constant="20" id="nBi-T3-mCq"/>
+                    <constraint firstItem="bvt-3P-958" firstAttribute="top" secondItem="Gg8-HU-cOv" secondAttribute="bottom" constant="5" id="sUB-MW-yOd"/>
+                    <constraint firstAttribute="trailing" secondItem="W8y-qI-3qa" secondAttribute="trailing" constant="20" id="tvH-Vs-F7Z"/>
+                    <constraint firstAttribute="trailing" secondItem="0qU-wj-m0Y" secondAttribute="trailing" constant="20" id="xsl-8X-yiN"/>
+                    <constraint firstAttribute="trailing" secondItem="Gg8-HU-cOv" secondAttribute="trailing" constant="20" id="zQh-CN-1ig"/>
+                    <constraint firstItem="pOy-LN-yGk" firstAttribute="top" secondItem="h0R-LJ-dL7" secondAttribute="bottom" constant="5" id="zt8-KD-xgO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="messageLable" destination="Gg8-HU-cOv" id="r99-rp-NY4"/>
+                <outlet property="replyButton" destination="0qU-wj-m0Y" id="dJ1-T1-hWH"/>
+                <outlet property="replyLable" destination="W8y-qI-3qa" id="Q5y-3H-bTB"/>
+                <outlet property="timeLable" destination="h0R-LJ-dL7" id="qbZ-Vx-zGp"/>
+            </connections>
+            <point key="canvasLocation" x="236" y="160"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="line" width="304" height="1"/>
+    </resources>
+</document>

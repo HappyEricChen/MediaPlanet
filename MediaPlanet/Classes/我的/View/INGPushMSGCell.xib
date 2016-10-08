@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="pushCell" rowHeight="103" id="KGk-i7-Jjw" customClass="INGPushMSGCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="102.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfh-NY-3bO">
+                        <rect key="frame" x="20" y="10" width="280" height="19.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小伙伴们收到红包之后。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXS-Fv-UiP">
+                        <rect key="frame" x="20" y="34" width="280" height="34"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="eSl-BX-mWf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间：2016年8月25日 09：43" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnt-Sp-Gai">
+                        <rect key="frame" x="20" y="77" width="280" height="14.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="kiA-SG-dNu">
+                        <rect key="frame" x="0.0" y="101.5" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="UvX-Qw-e3g"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personal_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="0ef-U2-zVs">
+                        <rect key="frame" x="283" y="45.5" width="7" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="fq7-h3-77j"/>
+                            <constraint firstAttribute="height" constant="12" id="rhC-L3-CJD"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jnt-Sp-Gai" secondAttribute="bottom" constant="11" id="Aa8-Pm-CM1"/>
+                    <constraint firstItem="jnt-Sp-Gai" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="CRy-gK-tKk"/>
+                    <constraint firstAttribute="trailing" secondItem="0ef-U2-zVs" secondAttribute="trailing" constant="30" id="NLF-ca-QXa"/>
+                    <constraint firstItem="QXS-Fv-UiP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="PCB-8G-4ex"/>
+                    <constraint firstAttribute="trailing" secondItem="kiA-SG-dNu" secondAttribute="trailing" id="Prp-dW-B48"/>
+                    <constraint firstItem="QXS-Fv-UiP" firstAttribute="top" secondItem="yfh-NY-3bO" secondAttribute="bottom" constant="5" id="WGP-bN-6I8"/>
+                    <constraint firstAttribute="trailing" secondItem="jnt-Sp-Gai" secondAttribute="trailing" constant="20" id="bBP-vi-3qJ"/>
+                    <constraint firstItem="kiA-SG-dNu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bfb-qA-jB8"/>
+                    <constraint firstAttribute="trailing" secondItem="QXS-Fv-UiP" secondAttribute="trailing" constant="20" id="cOd-mw-YOQ"/>
+                    <constraint firstAttribute="trailing" secondItem="yfh-NY-3bO" secondAttribute="trailing" constant="20" id="i1i-cg-bV6"/>
+                    <constraint firstItem="0ef-U2-zVs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="las-eq-AMH"/>
+                    <constraint firstAttribute="bottom" secondItem="kiA-SG-dNu" secondAttribute="bottom" id="mKt-5W-uXv"/>
+                    <constraint firstItem="yfh-NY-3bO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="uMU-Al-Kd2"/>
+                    <constraint firstItem="yfh-NY-3bO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="vOg-2n-ad1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="msgInfoLable" destination="QXS-Fv-UiP" id="LgW-1C-ujl"/>
+                <outlet property="msgTimeLable" destination="jnt-Sp-Gai" id="jqb-36-DkE"/>
+                <outlet property="msgTitleLable" destination="yfh-NY-3bO" id="DlW-Hq-Lyb"/>
+            </connections>
+            <point key="canvasLocation" x="278" y="233.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="line" width="304" height="1"/>
+        <image name="personal_arrow" width="7" height="12"/>
+    </resources>
+</document>

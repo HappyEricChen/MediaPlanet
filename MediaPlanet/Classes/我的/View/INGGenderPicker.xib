@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.80000000000000004" contentMode="scaleToFill" id="iN0-l3-epB" customClass="INGGenderPicker">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Xd-Wb-aT5">
+                    <rect key="frame" x="0.0" y="330" width="320" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjK-LU-3h6">
+                            <rect key="frame" x="10" y="0.0" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Bln-eJ-6jm"/>
+                                <constraint firstAttribute="height" constant="30" id="g5c-kN-Su2"/>
+                            </constraints>
+                            <state key="normal" title="取消"/>
+                            <connections>
+                                <action selector="cancelClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ldT-Mn-fUC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb8-Jg-ACL">
+                            <rect key="frame" x="260" y="0.0" width="50" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="HAF-sA-sTg"/>
+                                <constraint firstAttribute="width" constant="50" id="fII-c5-WTw"/>
+                            </constraints>
+                            <state key="normal" title="完成"/>
+                            <connections>
+                                <action selector="doneClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="2Cl-hY-gwl"/>
+                            </connections>
+                        </button>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tvc-6B-gAc">
+                            <rect key="frame" x="0.0" y="30" width="320" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="fep-gn-94H"/>
+                            </constraints>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="2vJ-MY-6dv"/>
+                        <constraint firstItem="PjK-LU-3h6" firstAttribute="top" secondItem="1Xd-Wb-aT5" secondAttribute="top" id="4dt-m9-9wH"/>
+                        <constraint firstItem="Tvc-6B-gAc" firstAttribute="leading" secondItem="1Xd-Wb-aT5" secondAttribute="leading" id="E85-Jf-dC1"/>
+                        <constraint firstItem="Jb8-Jg-ACL" firstAttribute="top" secondItem="1Xd-Wb-aT5" secondAttribute="top" id="FLD-v8-pmf"/>
+                        <constraint firstAttribute="bottom" secondItem="Tvc-6B-gAc" secondAttribute="bottom" id="Mwq-QQ-9PF"/>
+                        <constraint firstAttribute="trailing" secondItem="Tvc-6B-gAc" secondAttribute="trailing" id="V27-Nq-6gf"/>
+                        <constraint firstAttribute="trailing" secondItem="Jb8-Jg-ACL" secondAttribute="trailing" constant="10" id="ct4-8G-Z9s"/>
+                        <constraint firstItem="PjK-LU-3h6" firstAttribute="leading" secondItem="1Xd-Wb-aT5" secondAttribute="leading" constant="10" id="mpH-K8-Hbd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1Xd-Wb-aT5" secondAttribute="bottom" id="9U2-e3-PiM"/>
+                <constraint firstItem="1Xd-Wb-aT5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lKr-di-D6s"/>
+                <constraint firstAttribute="trailing" secondItem="1Xd-Wb-aT5" secondAttribute="trailing" id="rf2-Vx-0lC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="genderPicker" destination="Tvc-6B-gAc" id="KcB-Pr-oux"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="orderTopView">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="125"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海市浦东新区杨高南路788号陆家嘴世纪金融广场5503室" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViA-2I-hpD">
+                    <rect key="frame" x="85" y="53.5" width="277" height="33.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="0UQ-8J-1Tz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0UQ-8J-1Tz"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系电话：13838383838" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dO-q0-wxV">
+                    <rect key="frame" x="10" y="32" width="352" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系人：潘多拉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE5-HH-vV5">
+                    <rect key="frame" x="10" y="10" width="352" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系地址：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqd-qW-iE3">
+                    <rect key="frame" x="10" y="54" width="70" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="4t1-Rx-Wg4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hE5-HH-vV5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="4CZ-MH-hxb"/>
+                <constraint firstItem="Sqd-qW-iE3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="6ty-ut-saE"/>
+                <constraint firstAttribute="trailing" secondItem="ViA-2I-hpD" secondAttribute="trailing" constant="10" id="72z-3L-jUF"/>
+                <constraint firstItem="hE5-HH-vV5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="AqI-tf-GjA"/>
+                <constraint firstItem="Sqd-qW-iE3" firstAttribute="top" secondItem="8dO-q0-wxV" secondAttribute="bottom" constant="5" id="PfX-Qw-tGn"/>
+                <constraint firstItem="8dO-q0-wxV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="RTc-jx-jXg"/>
+                <constraint firstItem="Sqd-qW-iE3" firstAttribute="top" secondItem="8dO-q0-wxV" secondAttribute="bottom" constant="5" id="S7N-ot-7iS"/>
+                <constraint firstItem="ViA-2I-hpD" firstAttribute="top" secondItem="8dO-q0-wxV" secondAttribute="bottom" constant="5" id="fnG-fM-ade"/>
+                <constraint firstAttribute="trailing" secondItem="8dO-q0-wxV" secondAttribute="trailing" constant="10" id="kod-md-4hG"/>
+                <constraint firstItem="ViA-2I-hpD" firstAttribute="leading" secondItem="Sqd-qW-iE3" secondAttribute="trailing" constant="5" id="mmc-Eh-qIT"/>
+                <constraint firstItem="8dO-q0-wxV" firstAttribute="top" secondItem="hE5-HH-vV5" secondAttribute="bottom" constant="5" id="oyr-65-Vqp"/>
+                <constraint firstAttribute="trailing" secondItem="hE5-HH-vV5" secondAttribute="trailing" constant="10" id="toW-pd-GMp"/>
+                <constraint firstItem="8dO-q0-wxV" firstAttribute="top" secondItem="hE5-HH-vV5" secondAttribute="bottom" constant="5" id="zrm-sW-rg0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressLable" destination="ViA-2I-hpD" id="2Is-s2-zJY"/>
+                <outlet property="linkNameLable" destination="hE5-HH-vV5" id="afT-n0-EiD"/>
+                <outlet property="phoneNumLable" destination="8dO-q0-wxV" id="byl-C4-rNo"/>
+            </connections>
+            <point key="canvasLocation" x="364" y="78.5"/>
+        </view>
+    </objects>
+</document>
